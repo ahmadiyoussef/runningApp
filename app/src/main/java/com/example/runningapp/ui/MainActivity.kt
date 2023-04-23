@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //setSupportActionBar(toolbar)
+        setSupportActionBar(toolbar)
         bottomNavigationView.setupWithNavController(navHostFragment.findNavController())
         navHostFragment.findNavController()
             .addOnDestinationChangedListener { _, destination, _ ->
